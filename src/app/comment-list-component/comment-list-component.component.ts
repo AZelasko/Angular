@@ -24,4 +24,7 @@ export class CommentListComponentComponent implements OnInit {
   ngOnInit() {
   }
 
+  dodajComment(param) {
+    this.comments.unshift(param);
+  }
 }

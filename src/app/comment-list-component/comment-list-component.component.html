@@ -16,7 +16,7 @@
           <div class="card-body">
         <h4 class="card-title"> Lista komentarzy</h4>
          <div class="form-group">
-        <app-comment-component *ngFor="let comment of comments" [komentarz]="comment" >
+        <app-comment-component *ngFor="let comment of comments" [komentarz]="comment" (commentCreated)="DodajComment($event)" >
               </app-comment-component>
             </div>
           </div>
